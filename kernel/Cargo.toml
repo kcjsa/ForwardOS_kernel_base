@@ -1,0 +1,16 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+linked_list_allocator = "0.10"
+hashbrown = { version = "0.14", default-features = false, features = ["inline-more", "ahash"] }
+futures = { version = "0.3", default-features = false }
+
+[profile.release]
+opt-level = 3
+debug = true   # デバッグシンボル残す
+lto = false    # LTOはオフ
+panic = "abort"
+ld-args = ["-z", "max-page-size=0x1000"]
