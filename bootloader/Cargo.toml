@@ -1,0 +1,12 @@
+[package]
+name = "my_os_loader"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+uefi = { version = "0.28", features = ["alloc", "logger", "global_allocator"] }
+log = "0.4"
+xmas-elf = "0.9"
+
+[profile.release]
+panic = "abort"
