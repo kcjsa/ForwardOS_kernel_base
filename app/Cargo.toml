@@ -1,0 +1,11 @@
+[package]
+name = "APP"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "APP"
+path = "src/main.rs"
+
+[dependencies]
+# 必要なら dependencies を追加
