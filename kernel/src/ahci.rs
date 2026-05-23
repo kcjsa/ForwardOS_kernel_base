@@ -28,7 +28,6 @@ pub struct CommandHeader {
     pub ctba: u32, pub ctbau: u32, pub rsv: [u32; 4],
 }
 
-// ahci.rs - CommandTableにパディング追加
 #[repr(C, align(128))]
 pub struct CommandTable {
     pub cfis: [u8; 64],
