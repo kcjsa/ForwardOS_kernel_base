@@ -1,4 +1,4 @@
-// src/boot/timer.rs - frequencyメソッドを追加
+// src/boot/timer.rs
 
 use core::arch::asm;
 use crate::boot::debug_print;
