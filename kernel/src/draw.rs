@@ -141,8 +141,6 @@ pub fn clear_screen_db(db: &mut DoubleBuffer, color: u32) {
     db.vram_shadow.fill(color);
 }
 
-// src/draw.rs
-
 /// ダブルバッファに対して数値を16進数で描画する
 pub fn draw_u64_db(db: &mut DoubleBuffer, x: u32, y: u32, mut val: u64, color: u32) {
     if val == 0 {
@@ -163,8 +161,6 @@ pub fn draw_u64_db(db: &mut DoubleBuffer, x: u32, y: u32, mut val: u64, color: u
     }
 }
 
-// src/draw.rs に追加
-// src/draw.rs
 
 pub fn fill_rect_db(db: &mut DoubleBuffer, x: u32, y: u32, width: u32, height: u32, color: u32) {
     for dy in 0..height {
@@ -179,7 +175,6 @@ pub fn fill_rect_db(db: &mut DoubleBuffer, x: u32, y: u32, width: u32, height: u
         }
     }
 }
-// src/draw.rs
 
 pub fn draw_hex_dump(db: &mut DoubleBuffer, x: u32, y: u32, data: *const u8, len: usize, color: u32) {
     for i in 0..len {
@@ -199,8 +194,6 @@ pub fn draw_hex_dump(db: &mut DoubleBuffer, x: u32, y: u32, data: *const u8, len
     }
 }
 
-
-// src/draw.rs
 
 pub fn draw_hex_db(db: &mut DoubleBuffer, x: u32, y: u32, value: u64, color: u32) {
     let mut temp = value;
