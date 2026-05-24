@@ -8,4 +8,3 @@ name = "APP"
 path = "src/main.rs"
 
 [dependencies]
-# 必要なら dependencies を追加
