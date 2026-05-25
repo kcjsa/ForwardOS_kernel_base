@@ -1,7 +1,3 @@
-# ┌─┐┌─┐┌┬┐┌─┐  ┌─┐┌─┐
-# │  │ │ ││├┤   └─┐├─┘
-# └─┘└─┘─┴┘└─┘  └─┘┴  
-
 **Forward OS** - Educational Real-Time OS with Async Runtime written in Rust
 
 [![Build Status](https://github.com/yourname/forward-os/workflows/Build/badge.svg)](https://github.com/yourname/forward-os/actions)
