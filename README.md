@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-Forward OS is an **educational operating system** that demonstrates:
+Forward OS is an **operating system** that demonstrates:
 
 - ✅ **Async/Await Runtime** inside kernel space
 - ✅ **High-precision TSC Timer** (μs accuracy, no APIC garbage)
