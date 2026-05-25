@@ -1,6 +1,6 @@
 **Forward OS** - Educational Real-Time OS with Async Runtime written in Rust
 
-[![Build Status](https://github.com/yourname/forward-os/workflows/Build/badge.svg)](https://github.com/kcjsa/ForwardOS_kernel_base/releases)
+[![Build Status](https://github.com/kcjsa/ForwardOS_kernel_base/blob/main/icon.png)](https://github.com/kcjsa/ForwardOS_kernel_base/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Rust](https://img.shields.io/badge/rust-nightly-orange.svg)](https://www.rust-lang.org)
 
