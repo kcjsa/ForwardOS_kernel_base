@@ -1,0 +1,44 @@
+# ┌─┐┌─┐┌┬┐┌─┐  ┌─┐┌─┐
+# │  │ │ ││├┤   └─┐├─┘
+# └─┘└─┘─┴┘└─┘  └─┘┴  
+
+**Forward OS** - Educational Real-Time OS with Async Runtime written in Rust
+
+[![Build Status](https://github.com/yourname/forward-os/workflows/Build/badge.svg)](https://github.com/yourname/forward-os/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rust](https://img.shields.io/badge/rust-nightly-orange.svg)](https://www.rust-lang.org)
+
+---
+
+## 📖 Overview
+
+Forward OS is an **educational operating system** that demonstrates:
+
+- ✅ **Async/Await Runtime** inside kernel space
+- ✅ **High-precision TSC Timer** (μs accuracy, no APIC garbage)
+- ✅ **FAT32 File System** with AHCI driver
+- ✅ **ELF Loader** for user applications
+- ✅ **Lightweight Container** for process isolation
+- ✅ **E1000 Network Driver** (ARP/ICMP/UDP)
+
+Designed for **learning OS development** with practical, working examples.
+
+---
+
+## 🚀 Quick Start (QEMU)
+
+```bash
+# Clone
+git clone https://github.com/yourname/forward-os
+cd forward-os
+
+# Build kernel
+cargo build --release
+
+# Create disk image
+./tools/create_disk_img.sh
+
+# Run with QEMU
+make run
+# or
+qemu-system-x86_64 -drive format=raw,file=disk.img -serial stdio -vga std
