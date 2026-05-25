@@ -25,16 +25,16 @@ Designed for **learning OS development** with practical, working examples.
 
 ```bash
 # Clone
-git clone https://github.com/yourname/forward-os
-cd forward-os
+git clone https://github.com/kcjsa/ForwardOS_kernel_base
+cd ForwardOS_kernel_base
 
 # Build kernel
-cargo build --release
+cd kernel
+make run 
 
-# Create disk image
-./tools/create_disk_img.sh
 
-# Run with QEMU
+cd ..
+
+cd bootloader 
+
 make run
-# or
-qemu-system-x86_64 -drive format=raw,file=disk.img -serial stdio -vga std
