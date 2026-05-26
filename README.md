@@ -6,7 +6,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 Forward OS is an **operating system** that demonstrates:
 
@@ -21,7 +21,7 @@ Designed for **learning OS development** with practical, working examples.
 
 ---
 
-## 🚀 Quick Start (QEMU)
+## Quick Start (QEMU)
 
 ```bash
 # Clone
